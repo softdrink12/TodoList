@@ -1,0 +1,13 @@
+{
+    "todos": [{
+        "id": "1",
+        "name": "산책하기",
+        "description": "집 앞 산책하러 나가기",
+        "createdAt": "2025-01-0900",
+        "updatedAt": null,
+        "startDateAt": "2025-01-09",
+        "dueDateAt": "2025-01-10",
+        "status": "IDLE"
+    }
+    ]
+}
