@@ -58,34 +58,34 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## REST API
+# REST API
 
-# DB없이 JSON 파일 형식으로 구현.
+## DB없이 JSON 파일 형식으로 구현.
 
-# fs 모듈을 사용해서 JSON 배열에 데이터 저장.
-
-# src/interfacce/todoInterface.ts:
-  export interface TodoItem {
-      id: string; // id
-      name: string;   // 할 일
-      description: string;    // 세부내용
-      createdAt: string | Date;   // 생성한 날짜
-      updateAt: string | Date | null; // 업데이트한 날짜
-      startDateAt: string | Date | null;  // 시작한 날짜
-      dueDateAt: string | Date | null;    // 종료한 날짜
-      status: "IN PROCESS" | "DONE" | "IDLE"; // 현재 상태
-  }
-
-  // TodoList
-  export interface TodoList {
-      todos: TodoItem[];
-  }
+## fs 모듈을 사용해서 JSON 배열에 데이터 저장.
 
 # CRUD
-- Create: Post
-- Read : Get
-- update : Put
-- delete: Delete
+
+## Create
+- Method : Post
+- 새로운 TodoList 작성
+
+## Update
+- Method : Put
+- TodoList 수정
+
+## Delete 
+- Method : Delete
+- TodoList 삭제
+
+## Find one
+- Method : Get
+- 특정 ID를 통해서 TodoList 조회 가능
+
+## Find Many
+- Method : Get
+- 특정 Status 값을 통해서 TodoList 조회 가능
+
 
 # src/todolist
 - Controller, Service, Module 나눠서 구현
